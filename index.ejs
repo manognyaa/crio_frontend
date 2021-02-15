@@ -1,0 +1,105 @@
+<html>
+<head>
+<style>
+  section{
+  border: 3px dashed black;
+  padding-left:100px;
+  margin:100px;
+  padding-top:60px;
+  padding-right:500px;
+  background-color : #F39C12;
+  border-radius: 25px;
+  border-style: dotted dashed solid double;
+}
+
+
+.button {
+  border: 3px dashed black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  border-style: dotted dashed solid double;
+}
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+  border-radius:10px;
+}
+
+table {
+  border: 3px dashed black;
+}
+
+.button1 {background-color: rgb(7, 180, 16);} /* Green */
+h1 {
+  margin-right:70px;
+  margin-left:130px;
+  border-style: dotted dashed solid double;
+  border-color: darkcyan ;
+  background-color: cornsilk ;
+  padding-left:60px;
+    padding-right:10px;
+    padding-top:5px;
+  padding-bottom:5px;
+  border-radius:20px;
+}
+</style>
+</head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>meme page</title>
+</head>
+<body>
+  <marquee><h1> yo! welecome to my meme page</h1></marquee>
+  <body bgcolor=#E51450 >
+
+<div class="tab">
+<table border="0" width="100%" height="20px" bgcolor=#F39C12  class ="center">
+<tr >
+  <th width="500px" align="left"><font color=black font size="5px"><i> Enter your name</i> </font></th>
+  <%- include('nav'); %>
+</tr>
+  
+<tr>
+  <td><input type="text" placeholder="Enter your Full Name" style="width:550px; height:40px;" align="left"></td>
+</tr>
+  
+<tr>
+  <th width="150px" align="left"><font color=black font size="5px"> <i>Caption </i> </font> </th>
+</tr>
+  <td><input type="text" placeholder="Enter your catchy caption " style="width:550px; height:40px;" align="left"></td>
+
+<tr>
+  <th width="150px" align="left"><font color=black font size="5px"> <i>MEME URL</i></font> </th>
+</tr>
+  <td><input type="text" placeholder="Enter the URL of your MEME" style="width:550px; height:40px;" align="left"></td>
+
+</tr>
+</table>
+
+<section>
+ <div class="frm">
+    <form>
+  <label for="name" > owner's name: </label>
+  <input id = "owner_name" type="text" name="name_feild" value="enter your full name here."/>
+  <br>
+  <label for="caption"> enter your catchy caption: </label>
+  <input id="meme_caption" type="text" name="caption_feild" value="enter your caption here"/>
+  <br>
+  <label for="url">enter the URL of your meme</label>
+  <input id="meme_url" type="text" name="url_feild" value=" enter_your_meme_url_here"/>
+</form> 
+  </div>
+
+<button class="button"><font color=black font size="5px"> <b><i>Submit Here</b></i></font> </button>
+</div>
+</section>
+</body>
+</html>
